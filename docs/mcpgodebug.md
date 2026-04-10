@@ -18,6 +18,15 @@
 
 ## `MCPGODEBUG` history
 
+### 1.6.0
+
+Options listed below will be removed in the 1.8.0 version of the SDK.
+
+- `seterroroverwrite` added. If set to `1`, `SetError` will always overwrite
+  `Content` with the error text, restoring the previous behavior. The default
+  behavior was changed to preserve existing `Content` if it has already been
+  populated.
+
 ### 1.4.1
 
 Options listed below will be removed in the 1.6.0 version of the SDK.
