@@ -22,10 +22,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/modelcontextprotocol/go-sdk/auth"
-	internaljson "github.com/modelcontextprotocol/go-sdk/internal/json"
-	"github.com/modelcontextprotocol/go-sdk/internal/jsonrpc2"
-	"github.com/modelcontextprotocol/go-sdk/jsonrpc"
+	"github.com/standardbeagle/go-sdk/auth"
+	internaljson "github.com/standardbeagle/go-sdk/internal/json"
+	"github.com/standardbeagle/go-sdk/internal/jsonrpc2"
+	"github.com/standardbeagle/go-sdk/jsonrpc"
 )
 
 const (

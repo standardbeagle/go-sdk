@@ -15,7 +15,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/modelcontextprotocol/go-sdk/mcp"
+	"github.com/standardbeagle/go-sdk/mcp"
 )
 
 func TestContentUnmarshalNil(t *testing.T) {

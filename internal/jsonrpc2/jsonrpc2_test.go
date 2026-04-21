@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/modelcontextprotocol/go-sdk/internal/jsonrpc2"
+	"github.com/standardbeagle/go-sdk/internal/jsonrpc2"
 )
 
 var callTests = []invoker{

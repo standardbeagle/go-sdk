@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"maps"
 
-	internaljson "github.com/modelcontextprotocol/go-sdk/internal/json"
-	"github.com/modelcontextprotocol/go-sdk/internal/mcpgodebug"
+	internaljson "github.com/standardbeagle/go-sdk/internal/json"
+	"github.com/standardbeagle/go-sdk/internal/mcpgodebug"
 )
 
 // Optional annotations for the client. The client can use annotations to inform

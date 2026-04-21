@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-go get github.com/modelcontextprotocol/go-sdk
+go get github.com/standardbeagle/go-sdk
 ```
 
 ## Getting started
@@ -23,5 +23,5 @@ stdin/stdout:
 
 %include ../readme/client/client.go -
 
-The [`examples/`](https://github.com/modelcontextprotocol/go-sdk/tree/main/examples) directory contains more example clients and
+The [`examples/`](https://github.com/standardbeagle/go-sdk/tree/main/examples) directory contains more example clients and
 servers.

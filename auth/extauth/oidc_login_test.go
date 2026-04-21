@@ -12,9 +12,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/modelcontextprotocol/go-sdk/auth"
-	"github.com/modelcontextprotocol/go-sdk/internal/oauthtest"
-	"github.com/modelcontextprotocol/go-sdk/oauthex"
+	"github.com/standardbeagle/go-sdk/auth"
+	"github.com/standardbeagle/go-sdk/internal/oauthtest"
+	"github.com/standardbeagle/go-sdk/oauthex"
 	"golang.org/x/oauth2"
 )
 

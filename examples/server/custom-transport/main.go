@@ -12,8 +12,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/modelcontextprotocol/go-sdk/jsonrpc"
-	"github.com/modelcontextprotocol/go-sdk/mcp"
+	"github.com/standardbeagle/go-sdk/jsonrpc"
+	"github.com/standardbeagle/go-sdk/mcp"
 )
 
 // IOTransport is a simplified implementation of a transport that communicates using

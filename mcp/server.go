@@ -20,15 +20,16 @@ import (
 	"path/filepath"
 	"reflect"
 	"slices"
+	"strings"
 	"sync"
 	"sync/atomic"
 	"time"
 
 	"github.com/google/jsonschema-go/jsonschema"
-	internaljson "github.com/modelcontextprotocol/go-sdk/internal/json"
-	"github.com/modelcontextprotocol/go-sdk/internal/jsonrpc2"
-	"github.com/modelcontextprotocol/go-sdk/internal/util"
-	"github.com/modelcontextprotocol/go-sdk/jsonrpc"
+	internaljson "github.com/standardbeagle/go-sdk/internal/json"
+	"github.com/standardbeagle/go-sdk/internal/jsonrpc2"
+	"github.com/standardbeagle/go-sdk/internal/util"
+	"github.com/standardbeagle/go-sdk/jsonrpc"
 	"github.com/yosida95/uritemplate/v3"
 )
 
@@ -1084,6 +1085,15 @@ func (ss *ServerSession) callProgressNotificationHandler(ctx context.Context, p 
 		h(ctx, serverRequestFor(ss, p))
 	}
 	return nil, nil
+}
+
+// Notify sends a notification with an arbitrary custom method name.
+// method MUST start with "notifications/".
+func (ss *ServerSession) Notify(ctx context.Context, method string, params any) error {
+	if !strings.HasPrefix(method, "notifications/") {
+		return fmt.Errorf("Notify: method must start with notifications/, got %q", method)
+	}
+	return ss.getConn().Notify(ctx, method, params)
 }
 
 // NotifyProgress sends a progress notification from the server to the client

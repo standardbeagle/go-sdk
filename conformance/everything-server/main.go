@@ -20,7 +20,7 @@ import (
 	"time"
 
 	"github.com/google/jsonschema-go/jsonschema"
-	"github.com/modelcontextprotocol/go-sdk/mcp"
+	"github.com/standardbeagle/go-sdk/mcp"
 	"github.com/yosida95/uritemplate/v3"
 )
 

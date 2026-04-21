@@ -14,8 +14,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/modelcontextprotocol/go-sdk/internal/oauthtest"
-	"github.com/modelcontextprotocol/go-sdk/oauthex"
+	"github.com/standardbeagle/go-sdk/internal/oauthtest"
+	"github.com/standardbeagle/go-sdk/oauthex"
 	"golang.org/x/oauth2"
 )
 

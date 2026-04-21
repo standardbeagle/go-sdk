@@ -15,10 +15,10 @@ import (
 	"os"
 	"sync"
 
-	internaljson "github.com/modelcontextprotocol/go-sdk/internal/json"
-	"github.com/modelcontextprotocol/go-sdk/internal/jsonrpc2"
-	"github.com/modelcontextprotocol/go-sdk/internal/xcontext"
-	"github.com/modelcontextprotocol/go-sdk/jsonrpc"
+	internaljson "github.com/standardbeagle/go-sdk/internal/json"
+	"github.com/standardbeagle/go-sdk/internal/jsonrpc2"
+	"github.com/standardbeagle/go-sdk/internal/xcontext"
+	"github.com/standardbeagle/go-sdk/jsonrpc"
 )
 
 // ErrConnectionClosed is returned when sending a message to a connection that
